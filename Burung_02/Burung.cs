@@ -8,12 +8,16 @@ namespace Burung_02
     {
         public static Random pengacak = new Random();
 
-     
-        public virtual Telur[] EramTelur(int banyakTelur)
+
+        //public virtual Telur[] EramTelur(int banyakTelur)
+        public virtual List<Telur> EramTelur(int banyakTelur)
         {
             //throw new NotImplementedException();
+            List<Telur> x = new List<Telur>();
+            x.Add(null);
             Console.Error.WriteLine("Bird.Layeggs should never get called");
-            return new Telur[0];
+            
+            return x;
         }
     }
 }

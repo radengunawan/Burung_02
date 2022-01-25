@@ -2,7 +2,7 @@
 
 namespace Burung_02
 {
-    class Program
+    class Program 
     {
         static void Main(string[] args)
         {
@@ -18,7 +18,9 @@ namespace Burung_02
                 Console.Write("\number of egg u lay?");
                 if (!int.TryParse(Console.ReadLine(), out int banyakTelur)) return;
 
-                Telur[] tlrs = bi.EramTelur(banyakTelur);
+                //Telur[] tlrs = bi.EramTelur(banyakTelur);
+                var tlrs = bi.EramTelur(banyakTelur);
+                
                 foreach (Telur telur in tlrs)
                 {
                     Console.WriteLine(telur.Deskripsi);
