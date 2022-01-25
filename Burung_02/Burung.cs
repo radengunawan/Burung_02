@@ -8,8 +8,7 @@ namespace Burung_02
     {
         public static Random pengacak = new Random();
 
-        
-
+     
         public virtual Telur[] EramTelur(int banyakTelur)
         {
             //throw new NotImplementedException();
