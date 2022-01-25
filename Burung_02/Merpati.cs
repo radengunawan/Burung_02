@@ -13,8 +13,16 @@ namespace Burung_02
 
             for (int i = 0; i < banyakTelur; i++)
             {
+                if (Burung.pengacak.Next(4) == 0)
+                {
+                    //tlrs.Add(new TelorRusak(Burung.pengacak.NextDouble() * 2 + 1, "Putih"));
+                    tlrs.Add(new TelorRusak("Putih"));
+                }
                 //xxx[i] = new Telur(Burung.pengacak.NextDouble()*2+1, "Putih");
-                tlrs.Add(new Telur(Burung.pengacak.NextDouble() * 2 + 1, "Putih"));
+                else
+                {
+                    tlrs.Add(new Telur(Burung.pengacak.NextDouble() * 2 + 1, "Putih"));
+                }
 
             } //end for loop
 

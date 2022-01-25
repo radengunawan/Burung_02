@@ -6,9 +6,10 @@ namespace Burung_02
 {
     class TelorRusak : Telur
     {
-        public TelorRusak(double ukuran, string warnanya) : base (ukuran,warnanya)
+        public TelorRusak(string warnanya) : base (0,$"broken {warnanya}")
         {
-            Console.WriteLine("Malah rusak telornya");
+           Console.WriteLine("Malah rusak telornya");
+           
         }
     }
 }
