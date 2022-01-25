@@ -15,7 +15,7 @@ namespace Burung_02
                 if (kunci == 'P') bi = new Merpati();
                 else if (kunci == 'O') bi = new BurungOnta();
                 else return;
-                Console.Write("\number of egg u lay?");
+                Console.Write("\nnumber of egg u lay?");
                 if (!int.TryParse(Console.ReadLine(), out int banyakTelur)) return;
 
                 //Telur[] tlrs = bi.EramTelur(banyakTelur);
@@ -25,6 +25,11 @@ namespace Burung_02
                 {
                     Console.WriteLine(telur.Deskripsi);
                 }
+
+               // Telur t2 = new TelorRusak(12, "Redz");
+              //  Console.WriteLine(t2.Deskripsi);
+
+
             }
         }
     }
